@@ -1,0 +1,94 @@
+/* body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../imagens/fundo-pixel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+} */
+
+#header {
+    /* cor de fundo */
+    background-color:brown;
+    /* margem do topo */
+    margin-top: 50px; 
+    /* margem inferior */
+    margin-bottom: 50px;
+    /* estilo de fonte */
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#nameAndTitle {
+    background-color:white;
+    /* largura da div(caixa) com o texto */
+    width: 680px;
+    /* margem para posicionar caixa no tamanho, tbm pode usar padding q abrevia, da forma q esta alinha tamanho e no centro com a outra*/
+    margin: 0 auto; 
+    /* para alinhar o texto no centro da div(caixa)*/
+    text-align: center;
+}
+
+#colunas{
+    /* define modelo de caixas em grid (comodos) */
+    display: grid;
+    /* define como colunas o grid */
+    grid-template-columns: 30% auto;
+    /* define o espaço das colunas do grid  */
+    grid-column-gap:20px;
+}
+
+#colunaEsquerdo, #colunaDireito {
+    /* flex é para uma direção somente */
+    display: flex;
+    /* defina a direção unica no modo, no caso (coluna) */
+    flex-direction:column;
+    /* defina a divisao, o espaco entre cada div */
+    row-gap: 20px;
+}
+
+/* seleciona tudo na div com esse id*/
+#caixa {
+    font-family:Arial, Helvetica, sans-serif;
+    /* definindo a borda , solid add cor */
+    border: 1px solid gray;
+    /* arredondar borda */
+    border-radius: 15px;
+    /* espaçamento do texto com caixa */
+    padding: 20px;
+}
+
+.caixaDadosPessoais{
+    display: flex; 
+}
+
+#fotoPerfil{
+left: 300px;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+}
+
+/* seleciona todas h3 da class card  */
+#caixa h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* deixar em caixa alta */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/* selecionar marcador da lista, none (nenhum) */
+#listDadosPessoais, #listLinks {
+    list-style-type: none;
+}
+
+i {
+    color: brown;
+    width: 20px;
+}
+
+
+
+
+
+
